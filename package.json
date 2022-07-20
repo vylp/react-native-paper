@@ -1,6 +1,6 @@
 {
   "name": "react-native-paper",
-  "version": "5.0.0-rc.3",
+  "version": "5.0.0",
   "description": "Material design for React Native",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -37,7 +37,7 @@
     "lint": "eslint --ext '.js,.ts,.tsx' .",
     "test": "jest",
     "prepare": "bob build && node ./scripts/generate-mappings.js",
-    "release": "release-it",
+    "release": "dotenv release-it",
     "bootstrap": "yarn --cwd example && yarn --cwd docs && yarn",
     "docs": "yarn --cwd docs",
     "example": "yarn --cwd example"
@@ -74,6 +74,7 @@
     "commitlint": "^8.3.4",
     "conventional-changelog-cli": "^2.0.11",
     "dedent": "^0.7.0",
+    "dotenv-cli": "^6.0.0",
     "eslint": "^6.7.2",
     "eslint-config-callstack-io": "^1.1.1",
     "eslint-plugin-prettier": "^3.0.0",
